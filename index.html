@@ -10,10 +10,19 @@
         header { background: linear-gradient(135deg, #2e6f40, #1b4d22); color: white; padding: 50px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-bottom: 4px solid #81c784; }
         h1 { margin: 0; font-size: 2.6rem; letter-spacing: 1px; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
         header p { font-size: 1.2rem; color: #c8e6c9; margin-top: 12px; font-style: italic; }
-        .container { max-width: 900px; margin: 40px auto; padding: 35px; background: #223022; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.6); border: 1px solid #2e442e; }
+        
+        .container { max-width: 1100px; margin: 40px auto; padding: 35px; background: #223022; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.6); border: 1px solid #2e442e; }
         h2 { color: #81c784; border-bottom: 2px solid #81c784; display: inline-block; padding-bottom: 6px; margin-bottom: 25px; font-size: 1.6rem; }
-        .intro-text { line-height: 1.9; color: #e8f5e9; font-size: 1.15rem; text-align: justify; margin-bottom: 20px; }
-        .btn { display: inline-block; padding: 14px 35px; color: white; background-color: #2e6f40; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.15rem; margin-top: 20px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(46,111,64,0.4); border: 2px solid #81c784; }
+        .intro-text { line-height: 1.9; color: #e8f5e9; font-size: 1.15rem; text-align: justify; margin-bottom: 30px; }
+        
+        /* Video Grid Styling Optimized for Shorts/Videos */
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        .video-card { background: #1a241a; padding: 15px; border-radius: 12px; border: 1px solid #2e442e; box-shadow: 0 5px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: space-between; }
+        .video-card h3 { font-size: 1.1rem; color: #81c784; margin-top: 12px; margin-bottom: 5px; text-align: center; font-weight: 600; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background-color: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        
+        .btn { display: inline-block; padding: 14px 35px; color: white; background-color: #2e6f40; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.15rem; margin-top: 40px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(46,111,64,0.4); border: 2px solid #81c784; }
         .btn:hover { background-color: #1b4d22; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(76,175,80,0.6); }
         footer { margin-top: 60px; padding: 25px; background-color: #0d140d; color: #81c784; font-size: 0.95rem; border-top: 1px solid #1b4d22; }
     </style>
@@ -30,8 +39,34 @@
         <p class="intro-text">
             Welcome to my official website! Here, I share practical terrace gardening and organic farming tips to help you grow your own fresh vegetables and herbs at home. My mission is to simplify organic farming and bring green inspiration into your daily life with weekly how-tos, detailed tutorials, and step-by-step guides.
         </p>
+
+        <h2>Featured Tutorials & Videos</h2>
+        <div class="video-grid">
+            
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Sn3AqGa-2vo" allowfullscreen></iframe>
+                </div>
+                <h3>Health Benefits of Sonti (Dry Ginger)</h3>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/C2OlqFeIqtE" allowfullscreen></iframe>
+                </div>
+                <h3>How to Grow Fresh Palakura at Home</h3>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/pT01RHqzgbc" allowfullscreen></iframe>
+                </div>
+                <h3>Thamalapaku (Betel Leaf) Plant Care Tips</h3>
+            </div>
+
+        </div>
         
-        <a href="https://www.youtube.com/@KiraanKumarrChippala" target="_blank" class="btn">🌱 Subscribe on YouTube</a>
+        <a href="https://www.youtube.com/@KiraanKumarrChippala" target="_blank" class="btn">🌱 Visit My Full Channel</a>
     </div>
 
     <footer>
