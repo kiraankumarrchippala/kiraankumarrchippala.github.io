@@ -15,14 +15,22 @@
         h2 { color: #81c784; border-bottom: 2px solid #81c784; display: inline-block; padding-bottom: 6px; margin-bottom: 25px; font-size: 1.6rem; }
         .intro-text { line-height: 1.9; color: #e8f5e9; font-size: 1.15rem; text-align: justify; margin-bottom: 30px; }
         
-        /* Video Grid Styling Optimized for Shorts/Videos */
-        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        /* Video Grid Styling */
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; margin-bottom: 50px; }
         .video-card { background: #1a241a; padding: 15px; border-radius: 12px; border: 1px solid #2e442e; box-shadow: 0 5px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: space-between; }
         .video-card h3 { font-size: 1.1rem; color: #81c784; margin-top: 12px; margin-bottom: 5px; text-align: center; font-weight: 600; }
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background-color: #000; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
         
-        .btn { display: inline-block; padding: 14px 35px; color: white; background-color: #2e6f40; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.15rem; margin-top: 40px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(46,111,64,0.4); border: 2px solid #81c784; }
+        /* Blog Section Styling */
+        .blog-section { text-align: left; margin-top: 20px; }
+        .blog-card { background: #1a241a; padding: 25px; border-radius: 12px; border: 1px solid #2e442e; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .blog-card h3 { color: #81c784; margin-top: 0; font-size: 1.35rem; border-bottom: 1px dashed #2e442e; padding-bottom: 10px; margin-bottom: 15px; }
+        .blog-card ul { padding-left: 20px; line-height: 1.8; color: #e8f5e9; font-size: 1.05rem; }
+        .blog-card ul li { margin-bottom: 12px; }
+        .blog-card ul li strong { color: #a5d6a7; }
+        
+        .btn { display: inline-block; padding: 14px 35px; color: white; background-color: #2e6f40; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.15rem; margin-top: 20px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(46,111,64,0.4); border: 2px solid #81c784; }
         .btn:hover { background-color: #1b4d22; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(76,175,80,0.6); }
         footer { margin-top: 60px; padding: 25px; background-color: #0d140d; color: #81c784; font-size: 0.95rem; border-top: 1px solid #1b4d22; }
     </style>
@@ -42,31 +50,63 @@
 
         <h2>Featured Tutorials & Videos</h2>
         <div class="video-grid">
-            
             <div class="video-card">
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/Sn3AqGa-2vo" allowfullscreen></iframe>
                 </div>
                 <h3>Health Benefits of Sonti (Dry Ginger)</h3>
             </div>
-
             <div class="video-card">
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/C2OlqFeIqtE" allowfullscreen></iframe>
                 </div>
                 <h3>How to Grow Fresh Palakura at Home</h3>
             </div>
-
             <div class="video-card">
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/pT01RHqzgbc" allowfullscreen></iframe>
                 </div>
                 <h3>Thamalapaku (Betel Leaf) Plant Care Tips</h3>
             </div>
+        </div>
+
+        <h2>🌱 Weekly Gardening Guides & Tips</h2>
+        <div class="blog-section">
+            
+            <div class="blog-card">
+                <h3>1. ఇంట్లో టమోటా మొక్కలు బాగా పెరగడానికి టాప్ 5 టిప్స్ (Tomato Plant Care)</h3>
+                <ul>
+                    <li><strong>సరైన సూర్యరశ్మి (Sunlight):</strong> టమోటా మొక్కలకి రోజుకి కనీсом 6 నుంచి 8 గంటల పాటు డైరెక్ట్ సన్-лайట్ తగలాలి. ఎండ ఎంత బాగా వస్తే కాయలు అంత సైజ్ వస్తాయి.</li>
+                    <li><strong>వాటరింగ్ పద్ధతి (Watering):</strong> మొక్క మొదట్లో ఎప్పుడూ తేమ ఉండేలా చూసుకోవాలి కానీ ఓవర్-వాటరింగ్ చేయకూడదు. కుండీ అడుగున డ్రైనేజీ హోల్స్ సరిగ్గా ఉన్నాయో లేదో చెక్ చేసుకోండి.</li>
+                    <li><strong>ఆర్గానిక్ ఎరువులు (Organic Fertilizers):</strong> మొక్క నాటేటప్పుడు మట్టిలో వర్మీకంపోస్ట్ లేదా పశువుల ఎరువు కలపండి. పూత పూసే సమయంలో వారానికి ఒకసారి జీవామృతం ఇస్తే పూత రాలకుండా ఉంటుంది.</li>
+                    <li><strong>సపోర్ట్ ఇవ్వడం (Staking):</strong> టమోటా మొక్కలు కొంచెం పెరగ్గానే బరువుకి పడిపోకుండా కర్రతో గాని లేదా గ్రిల్స్ సపోర్ట్ గాని ఇచ్చి కట్టాలి.</li>
+                    <li><strong>ప్రూనింగ్ (Pruning):</strong> ఆకుల మొదళ్లలో వచ్చే చిన్న చిన్న సక్కర్స్ (అదనపు కొమ్మలు) కట్ చేయడం వల్ల బలం అంతా ప్రధాన కొమ్మకి చేరి ఎక్కువ టమోటాలు కాస్తాయి.</li>
+                </ul>
+            </div>
+
+            <div class="blog-card">
+                <h3>2. మిద్దె తోటలో కాకరకాయల దిగుబడి పెంచే పద్ధతులు (Bitter Gourd Gardening)</h3>
+                <ul>
+                    <li><strong>కుండీ సైజ్ (Pot Size):</strong> కాకరకాయ తీగ జాతి మొక్క కాబట్టి కనీసం 12x12 ఇంచులు లేదా అంతకంటే పెద్ద గ్రో బ్యాగ్స్ ఉపయోగించాలి. దీనివల్ల వేర్లు బాగా విస్తరిస్తాయి.</li>
+                    <li><strong>పాకుడు పందిరి (Trellis Support):</strong> తీగ బాగా సాగడానికి వీలుగా బాల్కనీ గ్రిల్స్ లేదా నైలాన్ నెట్ సహాయంతో ఒక చిన్న పందిరి లాంటి సపోర్ట్ ఏర్పాటు చేయాలి.</li>
+                    <li><strong>హ్యాండ్ పాలినేషన్ (Hand Pollination):</strong> టెర్రస్ గార్డెన్ లో ఒక్కోసారి తేనెటీగలు రాకపోతే పూత పిందెగా మారకుండా రాలిపోతుంది. అలాంటప్పుడు ఉదయం పూట మగపూలను కోసి ఆడపూల (వెనుక చిన్న కాకరకాయ ఉండే పూలు) తో తాకించి హ్యాండ్ పాలినేషన్ చేయాలి.</li>
+                    <li><strong>కీటకాల నివారణ (Pest Control):</strong> కాకర మొక్కలకి పెంకు పురుగులు, పిండి నల్లి ఆశించే అవకాశం ఎక్కువ. వారానికి ఒకసారి వేపనూనె (Neem Oil) స్ప్రే చేయడం వల్ల మొక్క ఆరోగ్యంగా ఉంటుంది.</li>
+                </ul>
+            </div>
+
+            <div class="blog-card">
+                <h3>3. కుండీల్లో ఉల్లిపాయలను సులభంగా పెంచడం ఎలా? (Growing Onions At Home)</h3>
+                <ul>
+                    <li><strong>మట్టి మిశ్రమం (Soil Mix):</strong> ఉల్లిపాయలు భూమి లోపల ఊరాలి కాబట్టి మట్టి చాలా లూజ్ గా ఉండాలి. 50% నల్లమట్టి/ఎర్రమట్టి, 30% కోకోపిట్, 20% వర్మీకంపోస్ట్ కలిపిన మిశ్రమం వాడితే ఉల్లిపాయలు బాగా పెరుగుతాయి.</li>
+                    <li><strong>నాటే విధానం (Planting):</strong> చిన్న చిన్న ఉల్లిపాయలను (Onion Sets) లేదా నారును కుండీలో 1 లేదా 2 ఇంచుల లోతులో, ప్రతి మొక్కకి మధ్య 3-4 ఇంచుల గ్యాప్ ఉండేలా నాటాలి. లోతు ఎక్కువైతే ఉల్లిపాయ సరిగ్గా ఊరదు.</li>
+                    <li><strong>నీటి యాజమాన్యం (Watering):</strong> ఉల్లి మొక్కలకి ఎక్కువ నీరు అవసరం లేదు. పైమట్టి ఆరిపోయినప్పుడు మాత్రమే నీరు పోయాలి. ఎక్కువ నీరైతే లోపల ఉల్లిపాయ కుళ్ళిపోతుంది.</li>
+                    <li><strong>కోత కోయడం (Harvesting):</strong> ఉల్లి ఆకులు పసుపు రంగులోకి మారి కిందకి వాలిపోయినప్పుడు, లోపల ఉల్లిపాయ పూర్తిగా తయారైందని అర్థం. అప్పుడు మొక్కను మెల్లగా పీకి ఎండలో 2 రోజులు ఆరబెట్టి వాడుకోవచ్చు.</li>
+                </ul>
+            </div>
 
         </div>
         
-        <a href="https://www.youtube.com/@KiraanKumarrChippala" target="_blank" class="btn">🌱 Visit My Full Channel</a>
+        <a href="https://www.youtube.com/@KiraanKumarr Chippala" target="_blank" class="btn">🌱 Visit My Full Channel for More Videos</a>
     </div>
 
     <footer>
