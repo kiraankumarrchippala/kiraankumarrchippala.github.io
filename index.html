@@ -8,27 +8,23 @@
         * { box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #1a241a; color: #f0f5f0; text-align: center; }
         
-        /* Navigation Bar with Top-Left Logo */
-        nav { position: fixed; top: 0; left: 0; width: 100%; background-color: #0d140d; padding: 10px 40px; z-index: 1000; border-bottom: 2px solid #2e6f40; display: flex; align-items: center; justify-content: space-between; }
-        .nav-logo { width: 45px; height: 45px; border-radius: 50%; background-color: white; padding: 2px; object-fit: contain; }
-        .nav-links { display: flex; gap: 30px; }
+        /* Navigation Bar */
+        nav { position: fixed; top: 0; left: 0; width: 100%; background-color: #0d140d; padding: 15px 20px; z-index: 1000; border-bottom: 2px solid #2e6f40; display: flex; justify-content: center; gap: 30px; }
         nav a { color: #81c784; text-decoration: none; font-size: 1.1rem; font-weight: bold; transition: color 0.3s; }
         nav a:hover { color: #ffffff; }
 
-        /* Compact Header Style */
-        header { background: linear-gradient(135deg, #2e6f40, #1b4d22); color: white; padding: 100px 20px 40px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-bottom: 4px solid #81c784; }
-        h1 { margin: 0; font-size: 2.4rem; letter-spacing: 1px; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        header p { font-size: 1.15rem; color: #c8e6c9; margin-top: 10px; font-style: italic; margin-bottom: 0; }
+        /* Header Style with Logo Integration */
+        header { background: linear-gradient(135deg, #2e6f40, #1b4d22); color: white; padding: 110px 20px 50px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-bottom: 4px solid #81c784; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .header-logo { width: 120px; height: 120px; border-radius: 50%; background-color: white; padding: 5px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: contain; }
+        h1 { margin: 0; font-size: 2.6rem; letter-spacing: 1px; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        header p { font-size: 1.2rem; color: #c8e6c9; margin-top: 12px; font-style: italic; }
         
-        .container { max-width: 1100px; margin: 30px auto; padding: 35px; background: #223022; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.6); border: 1px solid #2e442e; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 35px; background: #223022; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.6); border: 1px solid #2e442e; }
         h2 { color: #81c784; border-bottom: 2px solid #81c784; display: inline-block; padding-bottom: 6px; margin-bottom: 25px; font-size: 1.6rem; }
-        
-        /* About Me Section Layout with Line Space */
-        .about-heading { margin-bottom: 35px; } /* Gives a clear line space gap below heading */
-        .intro-text { line-height: 2; color: #e8f5e9; font-size: 1.15rem; text-align: center; max-width: 850px; margin: 0 auto 30px auto; }
+        .intro-text { line-height: 1.9; color: #e8f5e9; font-size: 1.15rem; text-align: justify; margin-bottom: 30px; }
         
         /* Section Spacing */
-        .page-section { padding-top: 50px; margin-bottom: 40px; }
+        .page-section { padding-top: 40px; margin-bottom: 60px; }
 
         /* Video Grid Styling */
         .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
@@ -54,7 +50,7 @@
         .social-card.ig:hover { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); transform: translateY(-3px); }
         .social-card.th:hover { background: #000000; border-color: #fff; transform: translateY(-3px); }
 
-        /* Shopping Grid Styling */
+        /* Shopping & Cart Interface Styling */
         .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; margin-top: 20px; }
         .product-card { background: #1a241a; padding: 20px; border-radius: 12px; border: 1px solid #2e442e; box-shadow: 0 5px 15px rgba(0,0,0,0.3); text-align: center; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
         .product-card h3 { color: #a5d6a7; margin-top: 0; font-size: 1.15rem; min-height: 45px; display: flex; align-items: center; text-align: center; justify-content: center; }
@@ -64,7 +60,7 @@
         .shop-btn { background-color: #2e6f40; color: #fff; border: none; padding: 8px 18px; border-radius: 20px; font-weight: bold; cursor: pointer; transition: 0.3s; width: 100%; border: 1px solid #81c784; }
         .shop-btn:hover { background-color: #1b4d22; }
 
-        /* Cart Box Style */
+        /* Cart & Form Box */
         .cart-box { background: #1a241a; border: 2px solid #2e6f40; border-radius: 16px; padding: 25px; margin-top: 40px; text-align: left; display: none; }
         .cart-title { color: #81c784; font-size: 1.4rem; font-weight: bold; border-bottom: 1px solid #2e6f40; padding-bottom: 10px; margin-bottom: 15px; }
         .cart-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #2d3d2d; }
@@ -73,7 +69,7 @@
         .checkout-form { margin-top: 25px; display: grid; gap: 15px; }
         .checkout-form input, .checkout-form textarea { width: 100%; padding: 12px; background: #223022; border: 1px solid #2e6f40; color: #fff; border-radius: 8px; font-size: 1rem; }
         
-        /* QR Code Modal Panel */
+        /* QR Code Modal Box */
         .qr-modal { display: none; background: #fff; color: #000; padding: 30px; border-radius: 16px; max-width: 400px; margin: 30px auto; border: 4px solid #2e6f40; box-shadow: 0 10px 25px rgba(0,0,0,0.5); text-align: center; }
         .qr-modal h4 { margin-top: 0; color: #1b4d22; font-size: 1.3rem; }
         .qr-placeholder { width: 220px; height: 220px; background: #eee; margin: 15px auto; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 2px dashed #999; border-radius: 10px; }
@@ -86,16 +82,14 @@
 <body>
 
     <nav>
-        <img src="logo.jpg" alt="CKC" class="nav-logo" onerror="this.style.display='none'">
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#social">Social Media</a>
-            <a href="#shopping">Shopping</a>
-        </div>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#social">Social Media</a>
+        <a href="#shopping">Shopping</a>
     </nav>
 
     <header id="home">
+        <img src="logo.jpg" alt="CKC Logo" class="header-logo" onerror="this.style.display='none'">
         <h1>Kiraan Kumarr Chippala</h1>
         <p>Your Ultimate Guide to Terrace Gardening & Organic Farming</p>
     </header>
@@ -110,4 +104,173 @@
                     <h3>Health Benefits of Sonti (Dry Ginger)</h3>
                 </div>
                 <div class="video-card">
-                    <div class="video-container"><iframe src="
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/C2OlqFeIqtE" allowfullscreen></iframe></div>
+                    <h3>How to Grow Fresh Palakura at Home</h3>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/pT01RHqzgbc" allowfullscreen></iframe></div>
+                    <h3>Thamalapaku (Betel Leaf) Plant Care Tips</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h2>🌱 Gardening Guides & Tips (గార్డెనింగ్ గైడ్స్)</h2>
+            <div class="blog-section">
+                <div class="blog-card">
+                    <h3>1. Tomato Plant Care | టమోటా మొక్కల పెంపకం</h3>
+                    <ul>
+                        <li><strong>Sunlight / సూర్యరశ్మి:</strong><span class="lang-en">Tomato plants need at least 6 to 8 hours of direct sunlight daily for better fruit size.</span><span class="lang-te">టమోటా మొక్కలకి రోజుకి కనీసం 6 నుంచి 8 గంటల పాటు డైరెక్ట్ సూర్యరశ్మి తగలాలి.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section" id="about">
+            <h2>About Me</h2>
+            <p class="intro-text" style="text-align: center; max-width: 800px; margin: 0 auto; line-height: 2;">
+                I am Kiraan Kumarr Chippala, a passionate content creator sharing organic farming methods to simplify terrace gardening.<br>
+                My mission is to empower urban families to transform empty spaces into green gardens and grow healthy, chemical-free food at home.
+            </p>
+        </div>
+
+        <div class="page-section" id="social">
+            <h2>Social Media</h2>
+            <div class="social-grid">
+                <a href="https://www.youtube.com/@KiraanKumarrChippala" class="social-card yt" target="_blank">YouTube</a>
+                <a href="https://facebook.com/profile.php?id=61579660564807" class="social-card fb" target="_blank">Facebook</a>
+                <a href="https://instagram.com/kirankumarchippala" class="social-card ig" target="_blank">Instagram</a>
+                <a href="https://threads.net/@kirankumarchippala" class="social-card th" target="_blank">Threads</a>
+            </div>
+        </div>
+
+        <div class="page-section" id="shopping">
+            <h2>Shopping - Organic Seeds Store</h2>
+            <p>Grow fresh veggies at home with our high-germination organic seeds. Max 3 packets per seed variety.</p>
+            
+            <div class="shop-grid">
+                <div class="product-card"><h3>Tomato (టమోటా)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-tomato"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Tomato (టమోటా)', 30, 'qty-tomato')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Brinjal (వంకాయ)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-brinjal"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Brinjal (వంకాయ)', 30, 'qty-brinjal')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Bitter Gourd (కాకరకాయ)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-bitter"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Bitter Gourd (కాకరకాయ)', 30, 'qty-bitter')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Gongura (గోంగూర)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-gongura"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Gongura (గోంగూర)', 30, 'qty-gongura')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Thotakura (తోటకూర)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-thotakura"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Thotakura (తోటకూర)', 30, 'qty-thotakura')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Palakura (పాలకూర)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-palakura"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Palakura (పాలకూర)', 30, 'qty-palakura')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Coriander (కొత్తిమీర)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-coriander"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Coriander (కొత్తిమీర)', 30, 'qty-coriander')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Pachi Mirchi (పచ్చిమిర్చి)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-mirchi"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Pachi Mirchi (పచ్చిమిర్చి)', 30, 'qty-mirchi')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Lady's Finger (బెండకాయ)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-benda"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Lady\'s Finger (బెండకాయ)', 30, 'qty-benda')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Cauliflower (క్యాబేజీ పూవు)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-cauli"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Cauliflower (క్యాబేజీ పూవు)', 30, 'qty-cauli')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Cabbage (క్యాబేజీ)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-cabbage"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Cabbage (క్యాబేజీ)', 30, 'qty-cabbage')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Elaichi (యాలకులు)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-elaichi"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Elaichi (యాలకులు)', 30, 'qty-elaichi')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Carrot (క్యారెట్)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-carrot"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Carrot (క్యారెట్)', 30, 'qty-carrot')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Mullangi (ముల్లంగి)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-mullangi"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Mullangi (ముల్లంగి)', 30, 'qty-mullangi')">🛒 Add to Cart</button></div>
+                <div class="product-card"><h3>Beetroot (బీట్‌రూట్)</h3><div class="price">1 Pkt - ₹30</div><select class="qty-select" id="qty-beet"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><button class="shop-btn" onclick="addToCart('Beetroot (బీట్‌రూట్)', 30, 'qty-beet')">🛒 Add to Cart</button></div>
+            </div>
+
+            <div class="cart-box" id="cartBox">
+                <div class="cart-title">🛒 Your Selected Seeds (మీరు ఎంచుకున్న విత్తనాలు)</div>
+                <div id="cartItems"></div>
+                <div class="cart-total" id="cartTotalText">Total Amount: ₹0</div>
+                
+                <div class="checkout-form">
+                    <h3 style="color: #81c784; margin-bottom: 0; font-size: 1.1rem;">Delivery Details (డెలివరీ చిరునామా)</h3>
+                    <input type="text" id="custName" placeholder="Your Name (మీ పేరు)" required>
+                    <input type="text" id="custPhone" placeholder="Mobile Number (ఫోన్ నెంబర్)" required>
+                    <textarea id="custAddress" rows="3" placeholder="Full Postal Address with Pincode (పూర్তি అడ్రస్ మరియు పిన్ కోడ్)" required></textarea>
+                    <button class="btn" onclick="generatePayment()">Proceed to Pay via UPI QR</button>
+                </div>
+            </div>
+
+            <div class="qr-modal" id="qrModal">
+                <h4>Scan QR Code to Pay (స్కాన్ చేసి పే చేయండి)</h4>
+                <div class="qr-placeholder" id="qrContainer">Generating QR...</div>
+                <p style="font-size: 1.1rem; font-weight: bold; margin: 10px 0;" id="qrTotalDisplay">Amount: ₹0</p>
+                <p style="font-size: 0.85rem; color: #666;">*Once paid, please take a screenshot and message it to our Facebook/Instagram along with your name to confirm shipment!</p>
+                <button class="shop-btn" style="margin-top: 15px;" onclick="closeQR()">Close (మూసిвеయి)</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kiraan Kumarr Chippala. All Rights Reserved. Built with GitHub Pages.</p>
+    </footer>
+
+    <script>
+        let cart = [];
+        // Your Verified UPI ID integrated below
+        const MERCHANT_UPI = "8074611369@pzw"; 
+
+        function addToCart(name, price, qtyId) {
+            let qty = parseInt(document.getElementById(qtyId).value);
+            
+            // Check if item already exists
+            let existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.qty = qty; // Update to latest selected quantity
+            } else {
+                cart.push({ name: name, price: price, qty: qty });
+            }
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            let cartBox = document.getElementById("cartBox");
+            let cartItemsDiv = document.getElementById("cartItems");
+            let totalText = document.getElementById("cartTotalText");
+            
+            if (cart.length === 0) {
+                cartBox.style.display = "none";
+                return;
+            }
+            
+            cartBox.style.display = "block";
+            cartItemsDiv.innerHTML = "";
+            let grandTotal = 0;
+            
+            cart.forEach(item => {
+                let cost = item.price * item.qty;
+                grandTotal += cost;
+                cartItemsDiv.innerHTML += `
+                    <div class="cart-item">
+                        <span>${item.name} x ${item.qty}</span>
+                        <span>₹${cost}</span>
+                    </div>
+                `;
+            });
+            
+            totalText.innerHTML = "Total Amount to Pay: ₹" + grandTotal;
+        }
+
+        function generatePayment() {
+            let name = document.getElementById("custName").value;
+            let phone = document.getElementById("custPhone").value;
+            let address = document.getElementById("custAddress").value;
+            
+            if (!name || !phone || !address) {
+                alert("Please fill out all delivery details! దయచేసి పూర్తి డెలివరీ చిరునామా వివరాలను పూరించండి.");
+                return;
+            }
+            
+            let total = 0;
+            cart.forEach(item => total += (item.price * item.qty));
+            
+            document.getElementById("qrTotalDisplay").innerHTML = "Total Amount: ₹" + total;
+            document.getElementById("qrModal").style.display = "block";
+            
+            // Dynamic UPI string generation for instant scanning
+            let upiUrl = `upi://pay?pa=${MERCHANT_UPI}&pn=Kiraan%20Kumarr&am=${total}&cu=INR&tn=Seeds%20Order%20by%20${encodeURIComponent(name)}`;
+            let qrImgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(upiUrl)}`;
+            
+            document.getElementById("qrContainer").innerHTML = `<img src="${qrImgUrl}" alt="UPI Payment QR Code" style="width:100%; height:100%; border-radius:8px;">`;
+            
+            // Smoothly view the QR Box
+            document.getElementById("qrModal").scrollIntoView();
+        }
+
+        function closeQR() {
+            document.getElementById("qrModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
